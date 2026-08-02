@@ -1,65 +1,123 @@
-🧹 Forget Me – One-Click Privacy Cleaner for Chrome
+# 🧹 Forget Me – One-Click Privacy Cleaner for Chrome
 
-Forget Me is a lightweight Chrome extension that helps you instantly erase all traces of any website cookies, cache, local storage, and history with just one click.
+Forget Me is a lightweight, open-source Chrome extension that helps you instantly remove browsing data for the current website. With a single click, you can clear cookies, cache, local storage, and other site data to protect your privacy without affecting the rest of your browser.
 
-📅 Features
+## ✨ Features
 
-✅ One-Click Clean: Instantly delete cookies, cache, local storage, and history for the current site.
+* 🧹 **One-Click Clean**
+  Instantly delete cookies, cache, local storage, IndexedDB, and browsing history for the current website.
 
-🫼 Auto-Clean After Visit (Coming Soon): Automatically clean data when you close a tab.
+* ⚡ **Quick Actions**
+  Clean site data in seconds with a simple, easy-to-use interface.
 
-🌐 Site-Specific Privacy: Focuses only on the site you're on, not your whole browser.
+* 📊 **Clean History Summary**
+  View details of your most recent cleanup activity.
 
-❄️ "Incognito but Better": Use regular Chrome mode with incognito-level privacy.
+* ⚙️ **Custom Settings**
+  Choose what data to clean and configure your preferred cleanup behavior.
 
-📆 Lightweight & Open Source: No tracking, no bloat.
+* 🔄 **Auto Cleanup Toggle**
+  Enable or disable automatic cleanup for a more hands-free privacy experience.
 
-👆 Simple UI: Click the icon → hit "Clean Now" → done.
+* 🌐 **Site-Specific Privacy**
+  Cleans data only for the current website instead of your entire browser.
 
-📅 Download & Install (Manual)
+* 🕵️ **Incognito, but Better**
+  Enjoy enhanced privacy while browsing in your normal Chrome window.
 
-Since Forget Me is not on the Chrome Web Store yet, you can install it manually:
+* 🔒 **Privacy First**
+  No tracking, no analytics, and no data leaves your device.
 
-Step 1: Download the Extension
+* 💡 **Lightweight & Open Source**
+  Fast, minimal, and built with transparency in mind.
 
-Step 2: Extract the ZIP
+## 📥 Installation
 
-Right-click the downloaded file → "Extract All"
+Since **Forget Me** is not yet available on the Chrome Web Store, you can install it manually.
 
-You’ll get a folder like forget-me-extension-main
+### 1. Download the Repository
 
-Step 3: Open Chrome Extensions Page
+Download or clone this repository:
 
-Open Chrome and go to: chrome://extensions
+```bash
+git clone https://github.com/rajansingh07/Forget-Me.git
+```
 
-Enable Developer mode (toggle at the top-right corner)
+Or download the project as a ZIP file from GitHub.
 
-Step 4: Load the Extension
+### 2. Extract the Files
 
-Click "Load unpacked"
+If you downloaded the ZIP, extract it to any folder.
 
-Select the folder you extracted
+### 3. Open Chrome Extensions
 
-The "Forget Me" icon should appear in your toolbar
+Open Chrome and visit:
 
-Step 5: (Optional) Pin the Extension
+```text
+chrome://extensions
+```
 
-Click the 🧹 puzzle icon in Chrome
+Enable **Developer mode** using the toggle in the top-right corner.
 
-Pin the extension to your toolbar for easy access
+### 4. Load the Extension
 
-🚀 How to Use
+* Click **Load unpacked**
+* Select the extracted project folder
 
-Visit any website
+The **Forget Me** extension will now appear in your browser.
 
-Click the Forget Me icon
+### 5. Pin the Extension (Optional)
 
-Press "Clean Now"
+* Click the **Extensions (🧩)** icon in Chrome.
+* Pin **Forget Me** to your toolbar for quick access.
 
-That's it! Cookies, cache, and site data are gone
+## 🚀 How to Use
 
-🔒 Privacy First
+1. Visit any website.
+2. Click the **Forget Me** extension icon.
+3. Select the data you want to remove.
+4. Click **Clean Now**.
+5. Your selected browsing data is instantly removed.
 
-Forget Me does not collect, store, or transmit any data. All actions occur locally in your browser.
+## 🔒 Privacy
 
-📌 Made by Flickerdev
+Forget Me is built with privacy as the top priority.
+
+* No data collection
+* No user tracking
+* No cloud storage
+* No third-party analytics
+* Everything is processed locally on your device
+
+## 🛠️ Tech Stack
+
+* HTML5
+* CSS3
+* JavaScript (ES6)
+* Chrome Extension Manifest V3
+* Chrome Storage API
+* Chrome Browsing Data API
+* Chrome Notifications API
+
+## 🚧 Roadmap
+
+* Auto Cleanup Scheduler
+* Privacy Score Dashboard
+* Website Tracker Detection
+* Cleanup Analytics
+* Dark Mode
+* Chrome Web Store Release
+
+## 🤝 Contributing
+
+Contributions are welcome. Feel free to fork the repository, improve the project, and submit a pull request.
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 👨‍💻 Author
+
+**Made with ❤️ by Flickerdev**
+
+If you like this project, consider giving it a ⭐ on GitHub.
