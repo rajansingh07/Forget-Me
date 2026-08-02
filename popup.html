@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forget Me</title>
+    <link rel="stylesheet" href="styles/popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="main-view">
+        <header>
+          <div class="logo">
+            <img src="icons/icon.webp" alt="Forget Me" />
+            <h1>Forget Me</h1>
+          </div>
+          <p class="tagline">One-Click Privacy Cleaner</p>
+        </header>
+        <main>
+          <div class="current-site">
+            <h3>
+              Current Site:
+              <span id="current-url">Loading...</span>
+            </h3>
+          </div>
+          <div id="privacy-score-section" class="privacy-score hidden">
+            <h3>Privacy Score</h3>
+            <div class="score-ring">
+              <span id="privacy-score">--</span>
+            </div>
+            <p id="tracker-info" class="tracker-info hidden"></p>
+          </div>
+          <div class="quick-actions">
+            <h3>Quick Actions</h3>
+            <button id="quick-clean" type="button">Quick Clean</button>
+            <button id="deep-clean" type="button">Deep Clean</button>
+          </div>
+          <div class="auto-clean-status">
+            <h3>Auto Cleanup</h3>
+            <div class="toggle-row">
+              <span>Automatic Cleanup</span>
+              <input type="checkbox" id="auto-clean-toggle" />
+            </div>
+            <p id="auto-clean-status-text" class="auto-clean-hint"></p>
+          </div>
+          <div class="history-summary">
+            <h3>Last Cleanup</h3>
+            <p>Cookies: <span id="cookie-count">0</span></p>
+            <p>Cache: <span id="cache-size">0 MB</span></p>
+            <p>Last Clean: <span id="last-clean">Never</span></p>
+          </div>
+          <div class="actions">
+            <button id="clean-btn" class="clean-button" type="button">
+              Clean Now
+            </button>
+            <button id="settings-btn" class="settings-button" type="button">
+              Settings
+            </button>
+          </div>
+          <div class="status" id="status"></div>
+        </main>
+        <footer>
+          <a
+            class="footer-link"
+            href="https://x.com/flicker_dev"
+            target="_blank"
+            rel="noopener"
+          >
+            Made by <strong>Flickerdev</strong>
+          </a>
+          <p class="privacy-note">All data processed locally</p>
+        </footer>
+      </div>
+      <div id="settings-view" class="hidden">
+        <header class="settings-header">
+          <button
+            id="back-btn"
+            class="back-button"
+            type="button"
+            aria-label="Back"
+          >
+            Back
+          </button>
+          <div>
+            <h1>Settings</h1>
+            <p>Customize your privacy preferences</p>
+          </div>
+        </header>
+        <section class="card">
+          <h2>Automatic Cleanup</h2>
+          <div class="setting">
+            <div>
+              <h3>Enable Auto Cleanup</h3>
+              <p>Periodically clean data for recently visited sites</p>
+            </div>
+            <input type="checkbox" id="setting-auto-clean" />
+          </div>
+          <label class="field-label" for="setting-frequency"
+            >Cleanup Frequency</label
+          >
+          <select id="setting-frequency">
+            <option value="Every Day">Every Day</option>
+            <option value="Every Week">Every Week</option>
+            <option value="Every Month">Every Month</option>
+          </select>
+        </section>
+        <section class="card">
+          <h2>What to Clean</h2>
+          <p class="card-desc">
+            Choose which data types to remove when cleaning
+          </p>
+          <div class="options-grid">
+            <label class="option-item">
+              <input type="checkbox" id="cookies" />
+              <div class="option-content">
+                <span class="option-title">Cookies</span>
+                <span class="option-desc">Login data, preferences</span>
+              </div>
+            </label>
+            <label class="option-item">
+              <input type="checkbox" id="cache" />
+              <div class="option-content">
+                <span class="option-title">Cache</span>
+                <span class="option-desc">Stored files, images</span>
+              </div>
+            </label>
+            <label class="option-item">
+              <input type="checkbox" id="localStorage" />
+              <div class="option-content">
+                <span class="option-title">Local Storage</span>
+                <span class="option-desc">App data, settings</span>
+              </div>
+            </label>
+            <label class="option-item">
+              <input type="checkbox" id="history" />
+              <div class="option-content">
+                <span class="option-title">History</span>
+                <span class="option-desc">Browsing history</span>
+              </div>
+            </label>
+            <label class="option-item">
+              <input type="checkbox" id="indexedDB" />
+              <div class="option-content">
+                <span class="option-title">IndexedDB</span>
+                <span class="option-desc">Database storage</span>
+              </div>
+            </label>
+          </div>
+        </section>
+        <section class="card">
+          <h2>Privacy</h2>
+          <div class="setting">
+            <span>Show Privacy Score</span>
+            <input type="checkbox" id="setting-show-privacy-score" />
+          </div>
+          <div class="setting">
+            <span>Detect Trackers</span>
+            <input type="checkbox" id="setting-detect-trackers" />
+          </div>
+        </section>
+        <button id="save-settings-btn" type="button">Save Settings</button>
+        <p id="settings-status" class="settings-status"></p>
+        <footer>
+          All data stays locally
+        </footer>
+      </div>
+    </div>
+
+    <script src="scripts/popup.js"></script>
+  </body>
+</html>
